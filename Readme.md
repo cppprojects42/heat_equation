@@ -16,7 +16,7 @@ Next problem is solved:
 ```
 ```math
 \begin{equation}
-    u(x, 0) = 0.5 - |0.5-x|
+    u(x, 0) = 0.5 - |0.5-x|.
 \end{equation}
 ```
 
@@ -37,7 +37,7 @@ With the Robin boundary conditions:
 ## The structure of the repository:
 
 ```
-heat_eq/
+heat_equation/
 |---src/
     |--- fem_functions.cpp
     |--- main.cpp
@@ -84,13 +84,13 @@ cmake --build build
 ```
 ./build/heat_equation_solver
 ```
-( the default values for the coefficients: k_0 = k_1 = 1000000, g_0 = g_1 = 0 (the Dirichlet boundary conditions) )
+( the default values for the coefficients are taken: $k_0 = k_1 = 1000000, g_0 = g_1 = 0$ (the Dirichlet boundary conditions) )
 
 2)
 ```
 ./build/heat_equation_solver 1
 ```
-( the default values for the coefficients: k_0 = k_1 = 1000000, g_0 = g_1 = 0 (the Dirichlet boundary conditions) )
+( $k_0 = k_1 = 1000000, g_0 = g_1 = 0$ )
 
 The last flag ( 1 ) - the instruction for a 3d plotting
 
@@ -98,10 +98,10 @@ The last flag ( 1 ) - the instruction for a 3d plotting
 
 Reasonable coefficients can be provided: k_0, k_1, g_0, g_1
 
-all coefficients must be provided at once
+All coefficients must be provided at once
 ```
 ./build/heat_equation_solver 0 0 0 0 1
 ```
-k_0 = k_1 = g_0 = g_1 = 0 - (the Neumann boundary conditions)
+$k_0 = k_1 = g_0 = g_1 = 0$ (the Neumann boundary conditions)
 
 The last flag ( 1 ) - the instruction for a 3d plotting
